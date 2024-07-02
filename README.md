@@ -18,3 +18,13 @@ https://github.com/ptrela/BlogAspNetProjekt/tree/main/BlogAspNet
 
 Foldery: Controllers, Models, Services, Views - tam znajduje się cała logika aplikacji
 
+### Instalacja
+
+1. Pobrać lub sklonować repozytorium
+2. Otworzyć projekt w Visual Studio lub Jetbrains Raider
+3. Komendy do przywrócenia środowiska
+```
+dotnet restore - przywraca zależności (biblioteki) projektu
+dontnet build - kompiluje projekt
+dotnet run - uruchamia serwer
+```
