@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZ1Bvc3RzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/Views/BlogPosts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZ1Bvc3RzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/Views/BlogPosts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZ1Bvc3RzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
