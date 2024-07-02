@@ -9,4 +9,9 @@ public class CategoryService
         new Category { Id = 1, Name = "Ogólne" },
         new Category { Id = 2, Name = "Technologie" }
     };
+    
+    public static Category? GetCategoryById(int id)
+    {
+        return categories.FirstOrDefault(c => c.Id == id);
+    }
 }

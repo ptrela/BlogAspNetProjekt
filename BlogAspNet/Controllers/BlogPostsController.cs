@@ -5,7 +5,6 @@ namespace BlogAspNet.Controllers;
 
 public class BlogPostsController : Controller
 {
-    private readonly BlogPostService _blogPostService;
     
     public IActionResult Index()
     {
@@ -22,6 +21,12 @@ public class BlogPostsController : Controller
             return NotFound();
         }
         blogPost.Views++;
+
+        var categoryName = CategoryService.GetCategoryById(blogPost.CategoryId)?.Name;
+        
+        
+        ViewBag.CategoryName = categoryName ?? "Brak kategorii";
+        
         return View(blogPost);
     }
 }
