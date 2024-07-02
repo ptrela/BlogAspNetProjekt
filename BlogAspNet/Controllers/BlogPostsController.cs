@@ -16,4 +16,14 @@ public class BlogPostsController : Controller
     {
         return View(_blogPosts);
     }
+    
+    public IActionResult Details(Guid id)
+    {
+        var blogPost = _blogPosts.FirstOrDefault(x => x.Id == id);
+        if (blogPost == null)
+        {
+            return NotFound();
+        }
+        return View(blogPost);
+    }
 }

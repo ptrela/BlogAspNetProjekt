@@ -127,3 +127,4 @@
 /Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/obj/Debug/net8.0/BlogAspNet.pdb
 /Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/obj/Debug/net8.0/BlogAspNet.genruntimeconfig.cache
 /Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/obj/Debug/net8.0/ref/BlogAspNet.dll
+/Users/paweltrela/RiderProjects/BlogAspNet/BlogAspNet/obj/Debug/net8.0/BlogAspNet.sourcelink.json
