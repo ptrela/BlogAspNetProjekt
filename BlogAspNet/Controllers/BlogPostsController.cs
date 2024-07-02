@@ -7,9 +7,9 @@ public class BlogPostsController : Controller
 {
     private static List<BlogPost> _blogPosts = new List<BlogPost>
     {
-        new BlogPost { Id = Guid.NewGuid(), Title = "Pierwszy Post", Content = "Treść pierwszego posta." },
-        new BlogPost { Id = Guid.NewGuid(), Title = "Drugi post", Content = "Tresc drugiego posta." },
-        new BlogPost { Id = Guid.NewGuid(), Title = "Trzeci post", Content = "Treść trzeciego posta." }
+        new BlogPost { Id = Guid.NewGuid(), Title = "Pierwszy Post", Content = "Treść pierwszego posta.", Views = 0},
+        new BlogPost { Id = Guid.NewGuid(), Title = "Drugi post", Content = "Tresc drugiego posta.", Views = 3 },
+        new BlogPost { Id = Guid.NewGuid(), Title = "Trzeci post", Content = "Treść trzeciego posta.", Views = 5 }
     };
     
     public IActionResult Index()
@@ -24,6 +24,7 @@ public class BlogPostsController : Controller
         {
             return NotFound();
         }
+        blogPost.Views++;
         return View(blogPost);
     }
 }
