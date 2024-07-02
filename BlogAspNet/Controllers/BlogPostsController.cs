@@ -1,25 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
-using BlogAspNet.Models.Entities;
+using BlogAspNet.Services;
 
 namespace BlogAspNet.Controllers;
 
 public class BlogPostsController : Controller
 {
-    private static List<BlogPost> _blogPosts = new List<BlogPost>
-    {
-        new BlogPost { Id = Guid.NewGuid(), Title = "Pierwszy Post", Content = "Treść pierwszego posta.", Views = 0},
-        new BlogPost { Id = Guid.NewGuid(), Title = "Drugi post", Content = "Tresc drugiego posta.", Views = 3 },
-        new BlogPost { Id = Guid.NewGuid(), Title = "Trzeci post", Content = "Treść trzeciego posta.", Views = 5 }
-    };
+    private readonly BlogPostService _blogPostService;
     
     public IActionResult Index()
     {
-        return View(_blogPosts);
+        var blogPosts = BlogPostService.blogPosts;
+        return View(blogPosts);
     }
     
     public IActionResult Details(Guid id)
     {
-        var blogPost = _blogPosts.FirstOrDefault(x => x.Id == id);
+        var blogPosts = BlogPostService.blogPosts;
+        var blogPost = blogPosts.FirstOrDefault(x => x.Id == id);
         if (blogPost == null)
         {
             return NotFound();
