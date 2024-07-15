@@ -18,6 +18,13 @@ https://github.com/ptrela/BlogAspNetProjekt/tree/main/BlogAspNet
 
 Foldery: Controllers, Models, Services, Views - tam znajduje się cała logika aplikacji
 
+### Spis funkcjonalności
+
+1. Przeglądanie wpisów bloga
+2. Przeglądanie pojedynczego wpisu po przekazaniu id
+3. Licznik wyświetleń wpisu (zapisywany w pamięci na serwerze, restartowany po resecie serwera)
+4. Edycja wpisu
+
 ### Instalacja
 
 1. Pobrać lub sklonować repozytorium
